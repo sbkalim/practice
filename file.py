@@ -1,0 +1,13 @@
+# file= open("c:\\data\\lorem.txt", "a")
+# file.write("I love JavaScript")
+# file.close()
+# file= open("c:\\data\\lorem.txt", "r")
+# print(file.read())
+# file.close()
+file= open("c:\\data\\rj.txt", "r")
+f_out=open("c:\\data\\rj_wc.txt","w")
+for line in file:
+    tokens=line.split(' ')
+    f_out.write("Wordcount: " +str(len(tokens))+"--"+line)
+    print(len(tokens))
+file.close()
